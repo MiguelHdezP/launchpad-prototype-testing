@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.notification-banner {
+  border: 1px solid $black;
+  text-align: center;
+  div {
+    display: inline-block;
+  }
+  .notification-banner-iconTitle {
+    padding: 0.5rem 0;
+    h3 {
+      display: inline-block;
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+    img {
+      margin-right: 0.5rem;
+      width: 1rem;
+    }
+  }
+  .notification-banner-description {
+    p {
+    }
+  }
+}
+
+.showNotification {
+  display: block;
+}
+.hideNotification {
+  display: none;
+}

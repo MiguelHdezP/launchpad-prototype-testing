@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+article {
+  display: flex;
+  justify-content: space-between;
+  div {
+    margin: 0.9rem 0;
+  }
+  h1 {
+    color: $focusOutlineTitles;
+    font-size: 0.9rem;
+  }
+  p {
+    color: $titlesTextGray;
+    font-size: 0.75rem;
+  }
+  .patientCard-article2 p:nth-child(2) {
+    display: inline-block;
+    margin-top: 1rem;
+    vertical-align: text-bottom;
+  }
+}
+.active-patient {
+}

@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.divider {
+  border-bottom: 1px solid $applicationsGray;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 90%;
+}

@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.config-apps {
+  div {
+    margin: 0.7rem 0;
+  }
+  label {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+  }
+  .config-apps-button {
+    margin: 1rem 1rem 0 0;
+    text-align: right;
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid $appsFillGray;
+    cursor: pointer;
+    padding: 0.1rem 0.5rem;
+    &:hover {
+      background-color: $white;
+      border: 1px solid $darkGrayText;
+    }
+  }
+  input {
+    border: 1px solid $iconsGray;
+    border-radius: 3px;
+    color: $titlesTextGray;
+  }
+  .turn-onoff-apps {
+    display: block;
+    margin: 0.3rem;
+  }
+  .config-helper-text {
+    label {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    input {
+      font-size: 0.7rem;
+      margin: 0.3rem 0 0 0.3rem;
+      width: 91%;
+    }
+  }
+  .infoSent {
+    border-color: green !important;
+    color: green;
+  }
+}

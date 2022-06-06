@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.avatar {
+  @include borderRadius(50%);
+  border-radius: 50%;
+  color: #fff;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 1rem 0.5rem;
+  text-align: center;
+  width: 2rem;
+}
+.gr {
+  background-color: green;
+}
+.yl {
+  background-color: darkslategrey;
+}
+.bl {
+  background-color: blue;
+}
+.rd {
+  background-color: red;
+}
+.or {
+  background-color: orange;
+}
+.lgr {
+  background-color: cornflowerblue;
+}
+.lbl {
+  background-color: brown;
+}
+.prp {
+  background-color: purple;
+}
+.lprp {
+  background-color: darkorchid;
+}

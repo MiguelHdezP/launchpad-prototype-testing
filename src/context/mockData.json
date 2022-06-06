@@ -1,0 +1,361 @@
+[
+  {
+    "id": 1,
+    "appName": "Access HIM",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 2,
+    "appName": "Apache",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 3,
+    "appName": "Apache Reference",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 4,
+    "appName": "Bedrock",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 5,
+    "appName": "Example Orion Server",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 6,
+    "appName": "Clinical Inventory Manager",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 7,
+    "appName": "Clinical Action",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 8,
+    "appName": "Connect Messenger",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 9,
+    "appName": "Connect Messenger",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 10,
+    "appName": "CameraCapture",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 11,
+    "appName": "Data Base Tool",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 12,
+    "appName": "DCP Tools",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 13,
+    "appName": "Device Cross Reference",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 14,
+    "appName": "Discern Analytics",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 15,
+    "appName": "Event Code Maintenance",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 16,
+    "appName": "Expire Event Action",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 17,
+    "appName": "Explorer Menu",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 18,
+    "appName": "Feature Manager",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 19,
+    "appName": "FetaLink",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 20,
+    "appName": "FirstNet",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 21,
+    "appName": "Healthe At Cerner",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 22,
+    "appName": "HealtheLife",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 23,
+    "appName": "IV Builder Tool",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 24,
+    "appName": "Lab Console",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 25,
+    "appName": "Match List Management",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 26,
+    "appName": "Olympus",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 27,
+    "appName": "PowerChart",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 28,
+    "appName": "PowerChart Touch",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 29,
+    "appName": "Supply Chain Inventory",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 30,
+    "appName": "Worksheet Builder",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 1,
+    "appName": "Access HIM",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 2,
+    "appName": "Apache",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 3,
+    "appName": "Apache Reference",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 4,
+    "appName": "Bedrock",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 5,
+    "appName": "Example Orion Server",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 6,
+    "appName": "Clinical Inventory Manager",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 7,
+    "appName": "Clinical Action",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 8,
+    "appName": "Connect Messenger",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 9,
+    "appName": "Connect Messenger",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 10,
+    "appName": "CameraCapture",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 11,
+    "appName": "Data Base Tool",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 12,
+    "appName": "DCP Tools",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 13,
+    "appName": "Device Cross Reference",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 14,
+    "appName": "Discern Analytics",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 15,
+    "appName": "Event Code Maintenance",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 16,
+    "appName": "Expire Event Action",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 17,
+    "appName": "Explorer Menu",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 18,
+    "appName": "Feature Manager",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 19,
+    "appName": "FetaLink",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 20,
+    "appName": "FirstNet",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 21,
+    "appName": "Healthe At Cerner",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 22,
+    "appName": "HealtheLife",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 23,
+    "appName": "IV Builder Tool",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 24,
+    "appName": "Lab Console",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 25,
+    "appName": "Match List Management",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 26,
+    "appName": "Olympus",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 27,
+    "appName": "PowerChart",
+    "appIcon": "",
+    "applicationType": "Classic App"
+  },
+  {
+    "id": 28,
+    "appName": "PowerChart Touch",
+    "appIcon": ""
+  },
+  {
+    "id": 29,
+    "appName": "Supply Chain Inventory",
+    "appIcon": "",
+    "applicationType": ""
+  },
+  {
+    "id": 30,
+    "appName": "Worksheet Builder",
+    "appIcon": "",
+    "applicationType": ""
+  }
+]

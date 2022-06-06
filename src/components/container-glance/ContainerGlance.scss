@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.todays-glances {
+  background-color: $white;
+  border: 1px solid $applicationsGray;
+  @include borderRadius(5px);
+  margin: 1rem 0 5rem 0;
+  width: 22%;
+}

@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.content-container {
+  background-color: $containersLightGray;
+  margin: auto;
+  min-height: 500px;
+  width: 80%;
+}

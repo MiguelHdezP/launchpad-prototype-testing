@@ -1,0 +1,117 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.glances-container.content-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    li {
+      padding: 0 5%;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .glances-section-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .glances-section-header div:nth-child(2) {
+    margin-right: 0.6rem;
+  }
+  .glances-section-header div:nth-child(2) * {
+    color: $focusOutlineTitles;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    &:hover {
+      color: $titlesTextGray;
+    }
+  }
+  .schedule-glance,
+  .chats-glance,
+  .messages-glance,
+  .patientList-glance {
+    height: auto;
+  }
+  .messages-glance {
+    .today-glance-showMore-bottom {
+      text-align: center;
+      margin: 0.5rem 1rem 0.5rem 0.5rem;
+      font-size: 0.85rem;
+      color: #006aa7;
+    }
+  }
+}
+
+.config-divider.divider {
+  margin: 1.2rem 0;
+}
+.n-citrix-apps.citrix-apps {
+  flex-direction: row;
+  height: auto;
+}
+.z-citrix-apps.citrix-apps {
+  flex-direction: column;
+  height: 90vh;
+}
+
+.homepage.content-container {
+  margin: 6rem auto;
+  width: 60%;
+  ul {
+    margin: 4rem;
+    li {
+      margin: 3rem 0;
+      a {
+        color: $focusOutlineIcon;
+        &:hover {
+          color: $focusOutlineIconHover;
+        }
+        &:active {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.apps-recents {
+  .apps-recents-title {
+    background-color: $mainContainerLighter;
+    color: $iconsGray;
+    font-size: 0.9rem;
+    border-top: 1px solid $applicationsGray;
+    border-bottom: 1px solid $applicationsGray;
+    padding: 0.3rem 1rem;
+  }
+  ul {
+    li {
+      border-bottom: 1px solid $applicationsGray;
+      padding: 0.8rem 0 !important;
+      padding-left: 0.6rem !important;
+      .apps-recent-badge,
+      .apps-recent-badge2,
+      .apps-recent-badge3,
+      .apps-recent-badge4 {
+        color: $white;
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+        margin-right: 0.4rem;
+      }
+      .apps-recent-badge {
+        background-color: #009af3;
+      }
+      .apps-recent-badge2 {
+        background-color: #e600de;
+      }
+      .apps-recent-badge3 {
+        background-color: #00c049;
+      }
+      .apps-recent-badge4 {
+        background-color: #b700ff;
+      }
+    }
+  }
+}

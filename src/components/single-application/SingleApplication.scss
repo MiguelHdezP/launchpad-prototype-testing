@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.single-application {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+  margin-bottom: 3rem;
+  width: 10rem;
+  &:hover {
+    background-color: $mainContainerLighter;
+  }
+
+  .single-application-dummy {
+    background-color: $appsFillGray;
+    border: 1px solid #000;
+    height: 2.5rem;
+    min-width: 2.5rem;
+  }
+  .single-application-labels {
+    label:nth-child(2) {
+      color: $titlesTextGray;
+      margin-top: 0.2rem;
+    }
+  }
+  label {
+    display: block;
+    color: $black;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-left: 0.7rem;
+  }
+}

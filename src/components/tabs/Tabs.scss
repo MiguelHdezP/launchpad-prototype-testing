@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem auto 2rem;
+  width: 50%;
+  @media (max-width: 850px) {
+    margin-top: 2rem;
+    width: 70%;
+  }
+  @media (max-width: 520px) {
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .tabLink {
+    background-color: $white;
+    border: 2px solid $iconsGray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 0.9rem 1rem;
+    &:hover {
+      background-color: $focusFillIcon;
+      -webkit-box-shadow: 0px 1px 12px 2px rgba(0, 124, 195, 0.34);
+      box-shadow: 0px 1px 12px 2px rgba(0, 124, 195, 0.34);
+      border-color: $focusOutlineIcon;
+    }
+    &:active {
+      background-color: $white;
+    }
+    img {
+      width: 2rem;
+      @media (max-width: 768px) {
+        width: 1.2rem;
+      }
+    }
+  }
+  .tabLink.active {
+    background-color: $focusFillIcon;
+    -webkit-box-shadow: 0px 1px 12px 2px rgba(0, 124, 195, 0.34);
+    box-shadow: 0px 1px 12px 2px rgba(0, 124, 195, 0.34);
+    border-color: $focusOutlineIcon;
+  }
+  .tabCustom {
+    border: 2px dashed $dashlineSketch;
+  }
+  label {
+    color: $darkGrayText;
+    display: block;
+  }
+}

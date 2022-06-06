@@ -1,0 +1,3 @@
+let appsConfigFn = () => {};
+
+export { appsConfigFn };

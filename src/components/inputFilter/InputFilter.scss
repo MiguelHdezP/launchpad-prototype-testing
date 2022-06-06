@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.input-filter-label {
+  color: $darkGrayText;
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.input-filter {
+  background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png");
+  background-position: left;
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-position-x: 0.4rem;
+  border: 1px solid $inputGray;
+  border-radius: 0.2rem;
+  color: $darkGrayText;
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+  width: 90%;
+}
+
+.input-filter,
+.input-filter-button {
+  height: 2rem;
+}
+
+.input-filter-button {
+  border: 1px solid $inputGray;
+  background-color: $inputGray;
+  border-radius: 0.2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  vertical-align: bottom;
+  img {
+    background: none;
+    width: 1rem;
+  }
+  &:hover {
+    border: 1px solid $appBarFill;
+  }
+  &:active {
+    background-color: $white;
+  }
+}
+
+.input-filter-helperText {
+  color: $darkGrayText;
+  display: block;
+  font-size: 0.7rem;
+  margin: 0.8rem 0 0;
+}

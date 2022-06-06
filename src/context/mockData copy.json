@@ -1,0 +1,658 @@
+[
+  {
+    "id": 18,
+    "appName": "X-RAY Filter",
+    "appIcon": ""
+  },
+  {
+    "id": 17,
+    "appName": "X-RAY Config",
+    "appIcon": ""
+  },
+  {
+    "id": 16,
+    "appName": "Video Visits",
+    "appIcon": ""
+  },
+  {
+    "id": 15,
+    "appName": "Suply Chain Inventory",
+    "appIcon": ""
+  },
+  {
+    "id": 14,
+    "appName": "Scenario Data Generator",
+    "appIcon": ""
+  },
+  {
+    "id": 13,
+    "appName": "RevElate CRT Mapping Rules",
+    "appIcon": ""
+  },
+  {
+    "id": 12,
+    "appName": "Rehab Irfpal",
+    "appIcon": ""
+  },
+
+  {
+    "id": 11,
+    "appName": "Radiology",
+    "appIcon": ""
+  },
+  {
+    "id": 10,
+    "appName": "Powerchart Touch",
+    "appIcon": ""
+  },
+  {
+    "id": 9,
+    "appName": "Nursing",
+    "appIcon": ""
+  },
+  {
+    "id": 8,
+    "appName": "Instanote",
+    "appIcon": ""
+  },
+  {
+    "id": 7,
+    "appName": "Feature Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 6,
+    "appName": "Example Orion Server",
+    "appIcon": ""
+  },
+  {
+    "id": 5,
+    "appName": "Clinical Inventory Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 4,
+    "appName": "Clinical Action",
+    "appIcon": ""
+  },
+  {
+    "id": 3,
+    "appName": "Cerner Message Center",
+    "appIcon": ""
+  },
+  {
+    "id": 2,
+    "appName": "Case Cart Coordinator",
+    "appIcon": ""
+  },
+  {
+    "id": 1,
+    "appName": "CameraCapture",
+    "appIcon": ""
+  },
+  {
+    "id": 19,
+    "appName": "Access HIM",
+    "appIcon": ""
+  },
+  {
+    "id": 20,
+    "appName": "Apache",
+    "appIcon": ""
+  },
+  {
+    "id": 21,
+    "appName": "Apache Reference",
+    "appIcon": ""
+  },
+  {
+    "id": 22,
+    "appName": "Apahe Outcomes",
+    "appIcon": ""
+  },
+  {
+    "id": 23,
+    "appName": "App Bar",
+    "appIcon": ""
+  },
+  {
+    "id": 24,
+    "appName": "Automated Report Builder",
+    "appIcon": ""
+  },
+  {
+    "id": 25,
+    "appName": "Batch Charge Entryr",
+    "appIcon": ""
+  },
+  {
+    "id": 26,
+    "appName": "Bedrock",
+    "appIcon": ""
+  },
+  {
+    "id": 27,
+    "appName": "Blood Bank Review Queue",
+    "appIcon": ""
+  },
+  {
+    "id": 28,
+    "appName": "Capacity Management",
+    "appIcon": ""
+  },
+  {
+    "id": 29,
+    "appName": "CareAware Connect Messenger",
+    "appIcon": ""
+  },
+  {
+    "id": 30,
+    "appName": "CareAware Connect Voice",
+    "appIcon": ""
+  },
+  {
+    "id": 31,
+    "appName": "CareAware Device Integration",
+    "appIcon": ""
+  },
+  {
+    "id": 32,
+    "appName": "CareAware Infusion Management",
+    "appIcon": ""
+  },
+  {
+    "id": 33,
+    "appName": "CareAware Patient Flow",
+    "appIcon": ""
+  },
+  {
+    "id": 34,
+    "appName": "CareAware Reporting",
+    "appIcon": ""
+  },
+  {
+    "id": 35,
+    "appName": "CareAware Transfer Center",
+    "appIcon": ""
+  },
+  {
+    "id": 36,
+    "appName": "CareAware Waveform Management",
+    "appIcon": ""
+  },
+  {
+    "id": 37,
+    "appName": "Careset Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 38,
+    "appName": "Case Cart Coordinator",
+    "appIcon": ""
+  },
+  {
+    "id": 39,
+    "appName": "CDI Transition",
+    "appIcon": ""
+  },
+  {
+    "id": 40,
+    "appName": "Cern Server",
+    "appIcon": ""
+  },
+  {
+    "id": 41,
+    "appName": "Cerner Bridge",
+    "appIcon": ""
+  },
+  {
+    "id": 42,
+    "appName": "Cerner Camera Capture",
+    "appIcon": ""
+  },
+  {
+    "id": 43,
+    "appName": "Cerner Message Center",
+    "appIcon": ""
+  },
+  {
+    "id": 44,
+    "appName": "Cerner Mobile Care",
+    "appIcon": ""
+  },
+  {
+    "id": 45,
+    "appName": "Cerner Practice Wizard",
+    "appIcon": ""
+  },
+  {
+    "id": 46,
+    "appName": "Cerner SkyVue Distribution",
+    "appIcon": ""
+  },
+  {
+    "id": 47,
+    "appName": "Cerner Staff Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 48,
+    "appName": "Change Notification Console",
+    "appIcon": ""
+  },
+  {
+    "id": 49,
+    "appName": "Charge Recovery",
+    "appIcon": ""
+  },
+  {
+    "id": 50,
+    "appName": "Charge Viewer",
+    "appIcon": ""
+  },
+  {
+    "id": 51,
+    "appName": "Chart Completion",
+    "appIcon": ""
+  },
+  {
+    "id": 52,
+    "appName": "Chart Format Audit",
+    "appIcon": ""
+  },
+  {
+    "id": 53,
+    "appName": "Chart Request",
+    "appIcon": ""
+  },
+  {
+    "id": 54,
+    "appName": "Chart Request Maintenance",
+    "appIcon": ""
+  },
+  {
+    "id": 55,
+    "appName": "Clinical Inventory Management",
+    "appIcon": ""
+  },
+  {
+    "id": 56,
+    "appName": "Clinical View Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 57,
+    "appName": "Collection Inquiry",
+    "appIcon": ""
+  },
+  {
+    "id": 58,
+    "appName": "Committee Information Tracker",
+    "appIcon": ""
+  },
+  {
+    "id": 59,
+    "appName": "Connect Nursing",
+    "appIcon": ""
+  },
+  {
+    "id": 60,
+    "appName": "Core Event Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 61,
+    "appName": "Critical Care Dashboard",
+    "appIcon": ""
+  },
+  {
+    "id": 62,
+    "appName": "Critical Care Personalized",
+    "appIcon": ""
+  },
+  {
+    "id": 63,
+    "appName": "CRT Maintenance",
+    "appIcon": ""
+  },
+  {
+    "id": 64,
+    "appName": "CT Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 65,
+    "appName": "CV Tools",
+    "appIcon": ""
+  },
+  {
+    "id": 66,
+    "appName": "Data Base Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 67,
+    "appName": "DCP Tools",
+    "appIcon": ""
+  },
+  {
+    "id": 68,
+    "appName": "Device Cross Reference",
+    "appIcon": ""
+  },
+  {
+    "id": 69,
+    "appName": "Discern Analytics",
+    "appIcon": ""
+  },
+  {
+    "id": 70,
+    "appName": "Discern Launch",
+    "appIcon": ""
+  },
+  {
+    "id": 71,
+    "appName": "Discern Notify",
+    "appIcon": ""
+  },
+  {
+    "id": 72,
+    "appName": "Disclosure Audit Log",
+    "appIcon": ""
+  },
+  {
+    "id": 73,
+    "appName": "Distribution Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 74,
+    "appName": "Document Protocol",
+    "appIcon": ""
+  },
+  {
+    "id": 75,
+    "appName": "Event Code Maintenance",
+    "appIcon": ""
+  },
+  {
+    "id": 76,
+    "appName": "Expire Event Action",
+    "appIcon": ""
+  },
+  {
+    "id": 77,
+    "appName": "Explorer Menu",
+    "appIcon": ""
+  },
+  {
+    "id": 78,
+    "appName": "Feature Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 79,
+    "appName": "FetaLink",
+    "appIcon": ""
+  },
+  {
+    "id": 80,
+    "appName": "FirstNet",
+    "appIcon": ""
+  },
+  {
+    "id": 81,
+    "appName": "Folder Workstation",
+    "appIcon": ""
+  },
+  {
+    "id": 82,
+    "appName": "Healthe At Cerner",
+    "appIcon": ""
+  },
+  {
+    "id": 83,
+    "appName": "HealtheLife",
+    "appIcon": ""
+  },
+  {
+    "id": 84,
+    "appName": "Healthy Path",
+    "appIcon": ""
+  },
+  {
+    "id": 85,
+    "appName": "HealthyNow",
+    "appIcon": ""
+  },
+  {
+    "id": 86,
+    "appName": "HIM Chart Coding",
+    "appIcon": ""
+  },
+  {
+    "id": 87,
+    "appName": "HIM Letters",
+    "appIcon": ""
+  },
+  {
+    "id": 88,
+    "appName": "ICU",
+    "appIcon": ""
+  },
+  {
+    "id": 89,
+    "appName": "Inbox Config Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 90,
+    "appName": "Infusion Management Dashboard",
+    "appIcon": ""
+  },
+  {
+    "id": 91,
+    "appName": "Instanote",
+    "appIcon": ""
+  },
+  {
+    "id": 92,
+    "appName": "IV Builder Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 93,
+    "appName": "Lab Console",
+    "appIcon": ""
+  },
+  {
+    "id": 94,
+    "appName": "Match List Management",
+    "appIcon": ""
+  },
+  {
+    "id": 95,
+    "appName": "Medication Admin",
+    "appIcon": ""
+  },
+  {
+    "id": 96,
+    "appName": "Millennium Support Assistant",
+    "appIcon": ""
+  },
+  {
+    "id": 97,
+    "appName": "Olympus",
+    "appIcon": ""
+  },
+  {
+    "id": 98,
+    "appName": "Oncology Build Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 99,
+    "appName": "Order Catalog Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 100,
+    "appName": "Order Sentence Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 101,
+    "appName": "PathNet",
+    "appIcon": ""
+  },
+  {
+    "id": 102,
+    "appName": "Patient eSignature",
+    "appIcon": ""
+  },
+  {
+    "id": 103,
+    "appName": "Patient Kiosk",
+    "appIcon": ""
+  },
+  {
+    "id": 104,
+    "appName": "Pharmacy Batch Report",
+    "appIcon": ""
+  },
+  {
+    "id": 105,
+    "appName": "Pharmacy Dashboard",
+    "appIcon": ""
+  },
+  {
+    "id": 106,
+    "appName": "Pharmacy Med Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 107,
+    "appName": "PowerChart",
+    "appIcon": ""
+  },
+  {
+    "id": 108,
+    "appName": "PowerChart Touch",
+    "appIcon": ""
+  },
+  {
+    "id": 109,
+    "appName": "Powerforms",
+    "appIcon": ""
+  },
+  {
+    "id": 110,
+    "appName": "Preference Maintenance",
+    "appIcon": ""
+  },
+  {
+    "id": 111,
+    "appName": "Price Inquiry",
+    "appIcon": ""
+  },
+  {
+    "id": 112,
+    "appName": "Pricing Tool",
+    "appIcon": ""
+  },
+  {
+    "id": 113,
+    "appName": "Privilege Maintenance",
+    "appIcon": ""
+  },
+  {
+    "id": 114,
+    "appName": "QC Inquiry",
+    "appIcon": ""
+  },
+  {
+    "id": 115,
+    "appName": "Radiology Report Entry",
+    "appIcon": ""
+  },
+  {
+    "id": 116,
+    "appName": "Rate Structure",
+    "appIcon": ""
+  },
+  {
+    "id": 117,
+    "appName": "RevElate CRT Mapping Rules",
+    "appIcon": ""
+  },
+  {
+    "id": 114,
+    "appName": "Revenue Cycle",
+    "appIcon": ""
+  },
+  {
+    "id": 115,
+    "appName": "RevenueCycle",
+    "appIcon": ""
+  },
+  {
+    "id": 116,
+    "appName": "Rx Station",
+    "appIcon": ""
+  },
+  {
+    "id": 117,
+    "appName": "Stafflink",
+    "appIcon": ""
+  },
+  {
+    "id": 118,
+    "appName": "Supply Chain Inventory",
+    "appIcon": ""
+  },
+  {
+    "id": 119,
+    "appName": "SurgiNet",
+    "appIcon": ""
+  },
+  {
+    "id": 120,
+    "appName": "SurgiNet PowerChart",
+    "appIcon": ""
+  },
+  {
+    "id": 121,
+    "appName": "Transfer Center",
+    "appIcon": ""
+  },
+  {
+    "id": 122,
+    "appName": "Unified Use Manager",
+    "appIcon": ""
+  },
+  {
+    "id": 123,
+    "appName": "Video Visits",
+    "appIcon": ""
+  },
+  {
+    "id": 124,
+    "appName": "Waveform Management Personalized",
+    "appIcon": ""
+  },
+  {
+    "id": 125,
+    "appName": "Workflow Configuration",
+    "appIcon": ""
+  },
+  {
+    "id": 126,
+    "appName": "Workload Viewer",
+    "appIcon": ""
+  },
+  {
+    "id": 127,
+    "appName": "Worksheet Builder",
+    "appIcon": ""
+  }
+]

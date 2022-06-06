@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.lists {
+  border-bottom: 1px solid $applicationsGray;
+  cursor: pointer;
+  list-style: none;
+  &:hover {
+    background-color: $mainContainer;
+  }
+}
+.active-patient {
+  background-color: azure;
+}

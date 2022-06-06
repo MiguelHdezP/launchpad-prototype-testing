@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.tab-nav {
+  position: relative;
+  text-align: center;
+
+  label {
+    margin-top: 0.5rem;
+  }
+}

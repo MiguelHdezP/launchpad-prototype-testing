@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.app-filtering {
+  margin: 2rem auto 1rem auto;
+  padding: 0 0 0 4%;
+  width: 80%;
+  @media (max-width: 519px) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.citrix-apps {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  margin: auto;
+  width: 80%;
+
+  @media (max-width: 519px) {
+    width: 84%;
+  }
+}
+.citrix-apps-extraPadding {
+  padding-top: 5rem;
+}
+.no-apps-available {
+  color: $iconsGray;
+  font-size: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+  h2,
+  p {
+    color: $darkGrayText;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.no-matching-apps {
+  text-align: center;
+  img {
+    width: 4rem;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.no-apps-center {
+  width: 90%;
+  margin: 2rem auto auto;
+}

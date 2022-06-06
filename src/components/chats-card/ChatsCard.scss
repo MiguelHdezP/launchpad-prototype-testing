@@ -1,0 +1,113 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.chatsCard-card {
+  & > p {
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $titlesTextGray;
+    font-size: 0.75rem;
+  }
+  article {
+    display: flex;
+    justify-content: space-between;
+    div {
+      margin: 0.9rem 0 0.3rem 0;
+    }
+    h1 {
+      color: $focusOutlineTitles;
+      font-size: 0.9rem;
+    }
+
+    .patientCard-article2 p:nth-child(2) {
+      display: inline-block;
+      margin-top: 1rem;
+      vertical-align: text-bottom;
+    }
+    .chats-card-hour {
+      text-align: right;
+    }
+    .chatsCard-article-0 {
+      .chatsCard-circle-avatars {
+        display: inline-block;
+        margin: 0;
+        div {
+          margin: 0;
+        }
+        .avatar {
+          display: inline-block;
+        }
+        .avatars-2-elements {
+          .avatars-md {
+            display: flex;
+            justify-content: space-between;
+            .avatar {
+              font-size: 0.7rem;
+              height: 1.3rem;
+              line-height: 1.3rem;
+              margin-right: 0.2rem;
+              width: 1.3rem;
+            }
+            .avatars-fake-sapce {
+              width: 1rem;
+            }
+          }
+        }
+        .avatars-4-elements {
+          .avatars-sm {
+            .avatar {
+              font-size: 0.6rem;
+              height: 1.3rem;
+              line-height: 1.3rem;
+              margin-right: 0.2rem;
+              width: 1.3rem;
+            }
+            .avatars-fake-sapce {
+              width: 1rem;
+            }
+          }
+        }
+      }
+      .circle-email {
+        @include notificationDot;
+      }
+    }
+    .chatsCard-article1 {
+      text-align: left;
+      width: 53%;
+      p:nth-child(2) {
+        color: $black;
+      }
+      p:nth-child(3) {
+        color: $focusOutlineIcon;
+        font-weight: bold;
+        span {
+          background-color: $focusOutlineIcon;
+          border-radius: 50%;
+          display: inline-block;
+          height: 0.5rem;
+          margin: 0 0.3rem 0 0;
+          width: 0.5rem;
+        }
+      }
+    }
+    .chatsCard-article2 {
+      text-align: right;
+      p,
+      span {
+        color: $focusOutlineTitles;
+      }
+      span {
+        font-size: 0.7rem;
+      }
+    }
+    .chatsCard-article-0 {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .chats-last-message {
+    margin-left: 4.1rem;
+  }
+}

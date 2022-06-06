@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.count-badge {
+  background-color: $fillNotificationQuantity;
+  border: 2px solid $titlesTextGray;
+  border-radius: 50%;
+  color: $black;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  transition: padding 1s ease;
+  top: 0;
+  right: 0;
+}
+
+.count-grow {
+  font-size: 1rem;
+}

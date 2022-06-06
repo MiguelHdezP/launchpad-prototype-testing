@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.section-header {
+  background-color: $white;
+  border-bottom: 1px solid $mainContainer;
+  @include borderRadius(5px);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: $darkGrayText;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  width: 100%;
+  .section-header-title {
+    .section-count {
+      color: $focusOutlineTitles;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 0.09rem 0.3rem;
+    }
+    .countBubble {
+      border: 2px solid $iconsGray;
+      border-radius: 50%;
+    }
+  }
+}

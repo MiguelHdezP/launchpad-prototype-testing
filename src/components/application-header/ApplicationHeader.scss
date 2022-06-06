@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.application-header {
+  background-color: $appBarFill;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100%;
+
+  .application-header-title {
+    img {
+      margin-left: 1rem;
+      width: 0.6rem;
+    }
+    span {
+      color: $white;
+      font-size: 0.8rem;
+      margin-left: 0.6rem;
+    }
+  }
+
+  .application-header-options {
+    display: flex;
+    margin-right: 1rem;
+    ul {
+      border-right: 1px solid $white;
+      display: flex;
+      padding: 0.3rem;
+      li {
+        cursor: pointer;
+        padding: 0 0.3rem;
+        &:hover {
+          background-color: $titlesTextGray;
+        }
+      }
+      img {
+        width: 0.6rem;
+      }
+    }
+    .application-header-notificationsUser {
+      border: none;
+    }
+  }
+}

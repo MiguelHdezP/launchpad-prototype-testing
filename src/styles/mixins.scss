@@ -1,0 +1,29 @@
+@mixin borderRadius($round) {
+  border-radius: $round;
+}
+
+@mixin inputsStyles {
+  @include borderRadius(4px);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.25rem;
+  font-weight: 200;
+  outline: none;
+  padding: 0.8rem 1rem;
+  width: 70%;
+}
+
+@mixin borderRadius($val) {
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  border-radius: $val;
+}
+
+@mixin notificationDot {
+  background-color: #007cc3;
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.5rem;
+  margin: 0 0.3rem 0 0;
+  width: 0.5rem;
+}
