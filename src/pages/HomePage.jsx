@@ -10,7 +10,7 @@ export default function Homepage() {
       <ul className="homepage-links">
         <li>
           <a
-            href="https://launchpad-prototypes.herokuapp.com/today"
+            href="https://launchpad-prototypes.herokuapp.com/apps"
             target="_blank"
           >
             Prototype 1
@@ -18,7 +18,7 @@ export default function Homepage() {
         </li>
         <li>
           <a
-            href="https://launchpad-prototype2.herokuapp.com/today"
+            href="https://launchpad-prototype2.herokuapp.com/apps"
             target="_blank"
           >
             Prototype 2
@@ -26,7 +26,7 @@ export default function Homepage() {
         </li>
         <li>
           <a
-            href="https://launchpad-prototype3.herokuapp.com/today"
+            href="https://launchpad-prototype3.herokuapp.com/apps"
             target="_blank"
           >
             Prototype 3
@@ -34,7 +34,7 @@ export default function Homepage() {
         </li>
         <li>
           <a
-            href="https://launchpad-prototype4.herokuapp.com/today"
+            href="https://launchpad-prototype4.herokuapp.com/apps"
             target="_blank"
           >
             Prototype 4
@@ -42,7 +42,7 @@ export default function Homepage() {
         </li>
         <li>
           <a
-            href="https://launchpad-prototype5.herokuapp.com/today"
+            href="https://launchpad-prototype5.herokuapp.com/apps"
             target="_blank"
           >
             Prototype 5
@@ -50,7 +50,7 @@ export default function Homepage() {
         </li>
         <li>
           <a
-            href="https://launchpad-prototype6.herokuapp.com/today"
+            href="https://launchpad-prototype6.herokuapp.com/apps"
             target="_blank"
           >
             Prototype 6
