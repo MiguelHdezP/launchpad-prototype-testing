@@ -9,9 +9,13 @@ export default function SingleApplication(props) {
   let windowMode = "";
   switch (appName) {
     case "Connect Messenger":
-      urlAppOpen = "/messageCenterWin64";
-      if (id === 592) windowModeType = "_blank";
-      else windowMode = "fullscreen='yes'";
+      if (id === 592) {
+        urlAppOpen = "/messageCenterWinTouch";
+        windowModeType = "_blank";
+      } else {
+        urlAppOpen = "/messageCenterWin64";
+        windowMode = "fullscreen='yes'";
+      }
       break;
     case "PowerChart Touch":
       urlAppOpen = "/patient-list";

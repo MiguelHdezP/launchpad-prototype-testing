@@ -16,6 +16,7 @@ import WinPatientChart from "../pages/popup-pages/WinPatientChart";
 import WebPatientChart from "../pages/popup-pages/WebPatientChart";
 import PatientListImgWin64 from "../pages/popup-pages/PatientListImgWin64";
 import MessageCenterWin64 from "../pages/popup-pages/MessageCenterWin64";
+import MessageCenterWinTouch from "../pages/popup-pages/MessageCenterWinTouch";
 import Today from "../pages/Today";
 import Apps from "../pages/Apps";
 import Protocols from "../pages/Protocols";
@@ -62,6 +63,7 @@ export default function App() {
       urlPathToCheck === "webpatientchart" ||
       urlPathToCheck === "messageCenterWin64" ||
       urlPathToCheck === "patientListImgWin64" ||
+      urlPathToCheck === "messageCenterWinTouch" ||
       urlPathToCheck === ""
     ) {
       setTurnOnOffAppTabs(false);
@@ -213,7 +215,10 @@ export default function App() {
               path="/messageCenterWin64"
               element={<MessageCenterWin64 />}
             />
-
+            <Route
+              path="/messageCenterWinTouch"
+              element={<MessageCenterWinTouch />}
+            />
             <Route path="/organizer" element={<Organizer />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>

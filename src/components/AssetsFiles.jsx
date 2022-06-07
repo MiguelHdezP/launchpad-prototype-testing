@@ -16,6 +16,7 @@ import PatientListImgWin64 from "../assets/images/PatientList.png";
 import Win64PatientChart from "../assets/images/Win64_PatientChart.png";
 import WebPatientChartImg from "../assets/images/Web_PatientChart.png";
 import MessageCenterWin64 from "../assets/images/MessageCenterWin64.png";
+import MessageCenterWinTouch from "../assets/images/MessageCenterWin_touch.png";
 
 export {
   Applications,
@@ -36,4 +37,5 @@ export {
   Win64PatientChart,
   WebPatientChartImg,
   MessageCenterWin64,
+  MessageCenterWinTouch,
 };
