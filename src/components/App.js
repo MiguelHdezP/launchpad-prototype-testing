@@ -30,7 +30,7 @@ import HomePage from "../pages/HomePage";
 
 export default function App() {
   let pathArray = window.location.pathname.split("/");
-  let initialTabs = [2, 9, returnActiveTabs(pathArray[1])].sort(
+  let initialTabs = [1, 2, 9, returnActiveTabs(pathArray[1])].sort(
     (a, b) => a - b
   );
   const [sidebar, setSidebar] = useState(false);

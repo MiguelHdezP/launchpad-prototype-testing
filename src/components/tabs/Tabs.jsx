@@ -13,7 +13,6 @@ import {
 
 export default function Tabs(props) {
   const { toggleSideBar, visibleTabs, numberOfCounts } = props;
-  console.log("**Tabs numberOfCounts: ", numberOfCounts);
   let tabsToShow = (tabs, index) => {
     switch (parseInt(tabs)) {
       case 1:
