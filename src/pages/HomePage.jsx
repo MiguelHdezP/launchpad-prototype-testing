@@ -6,7 +6,7 @@ import Lists from "../components/lists/Lists";
 export default function Homepage() {
   return (
     <ContentContainer customClassContainer="homepage">
-      <SectionHeader sectionText="Homepage" />
+      <SectionHeader sectionText="Homepage" noExtraLinks={true} />
       <ul>
         <li>
           <a href="/apps">Prototype 1</a>

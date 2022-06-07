@@ -52,7 +52,7 @@ export default function Apps(props) {
 
   return (
     <ContentContainer>
-      <SectionHeader sectionText="Applications" />
+      <SectionHeader sectionText="Applications" noExtraLinks={true} />
       {dataNoData > 15 ? (
         <Form>
           <FieldSet classFieldset="app-filtering">

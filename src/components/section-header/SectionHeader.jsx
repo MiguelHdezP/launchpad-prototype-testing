@@ -12,10 +12,11 @@ export default function SectionHeader(props) {
     hyperLinkData = {},
     customClassSectHeader,
     newMessagesCount,
+    noExtraLinks,
   } = props;
   const {
     customClassHyperlink = "",
-    hyperlinkText = "Show More",
+    hyperlinkText = noExtraLinks ? "" : "Show More",
     hrefHyperlink = "",
     hyperlinkTarget = "",
   } = hyperLinkData;
