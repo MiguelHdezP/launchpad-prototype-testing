@@ -11,7 +11,7 @@ export default function Settings(props) {
   };
   return (
     <ContentContainer>
-      <SectionHeader sectionText="Settings" />
+      <SectionHeader sectionText="Settings" noExtraLinks={true} />
       <div className="pagesContainer">
         <h1>
           Choose one to five modules to display. Apps and Settings are required.
