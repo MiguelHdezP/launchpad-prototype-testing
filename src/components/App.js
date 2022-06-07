@@ -12,6 +12,10 @@ import Modal from "../components/modal/Modal";
 import PatientListViewMore from "../pages/popup-pages/PatientListViewMore";
 import PatientList from "../pages/popup-pages/PatientList";
 import Organizer from "../pages/popup-pages/Organizer";
+import WinPatientChart from "../pages/popup-pages/WinPatientChart";
+import WebPatientChart from "../pages/popup-pages/WebPatientChart";
+import PatientListImgWin64 from "../pages/popup-pages/PatientListImgWin64";
+import MessageCenterWin64 from "../pages/popup-pages/MessageCenterWin64";
 import Today from "../pages/Today";
 import Apps from "../pages/Apps";
 import Protocols from "../pages/Protocols";
@@ -23,8 +27,6 @@ import Announcements from "../pages/Announcements";
 import Messages from "../pages/Messages";
 import Ddashboard from "../pages/Ddashboard";
 import HomePage from "../pages/HomePage";
-import WinPatientChart from "../pages/popup-pages/WinPatientChart";
-import WebPatientChart from "../pages/popup-pages/WebPatientChart";
 
 export default function App() {
   let pathArray = window.location.pathname.split("/");
@@ -32,7 +34,7 @@ export default function App() {
     (a, b) => a - b
   );
   const [sidebar, setSidebar] = useState(false);
-  const [dataNoData, setDataNoData] = useState(0);
+  const [dataNoData, setDataNoData] = useState(127);
   const [searchConfig, setSearchConfig] = useState(true);
   const [sortConfig, setSSortConfig] = useState(3);
   const [arrangeConfig, setArrangeConfig] = useState(5);
@@ -58,6 +60,8 @@ export default function App() {
       urlPathToCheck === "organizer" ||
       urlPathToCheck === "win64patientchart" ||
       urlPathToCheck === "webpatientchart" ||
+      urlPathToCheck === "messageCenterWin64" ||
+      urlPathToCheck === "patientListImgWin64" ||
       urlPathToCheck === ""
     ) {
       setTurnOnOffAppTabs(false);
@@ -201,6 +205,15 @@ export default function App() {
               path="/patientList-viewMore"
               element={<PatientListViewMore />}
             />
+            <Route
+              path="/patientListImgWin64"
+              element={<PatientListImgWin64 />}
+            />
+            <Route
+              path="/messageCenterWin64"
+              element={<MessageCenterWin64 />}
+            />
+
             <Route path="/organizer" element={<Organizer />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>

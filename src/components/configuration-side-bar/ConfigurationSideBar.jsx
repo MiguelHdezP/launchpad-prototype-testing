@@ -64,7 +64,7 @@ export default function ConfigurationSideBar(props) {
     <>
       <div className="navBar">
         <Link to="#" className="menu-bars" title="Configuration options">
-          <BsGearFill onClick={populateSideBar} />
+          {/*<BsGearFill onClick={populateSideBar} />*/}
         </Link>
       </div>
       <nav className={sidebarVisible ? "nav-menu active" : "nav-menu"}>

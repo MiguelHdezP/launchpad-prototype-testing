@@ -16,29 +16,45 @@ export default function Today(props) {
     toggleModalEmailRead,
   } = props;
   const [arrayNumberMsg, setArrayNumberMsg] = useState(3);
-  const [arrayNumberSch, setArrayNumberSch] = useState(4);
+  const [arrayNumberSch, setArrayNumberSch] = useState(5);
   let patientName = [
     "Allie Terry",
     "Alice Dyer",
-    "Eugene Doherty",
-    "Suzie Smith",
+    "Brody Katz",
+    "Christina Burton",
     "Essie Stanley",
+    "Gabriela Stephens",
     "Fredrick Mitchell",
     "Jack Knight",
+    "Jenna Kimball",
+    "Lucas McCoy",
+    "Liana Frank",
+    "Matteo Nielsen",
     "Olga Fleming",
+    "Suzie Smith",
   ];
   let patHour = [
     "9:15 AM",
     "9:30 AM",
     "9:45 AM",
-    "10:10 AM",
     "10:30 AM",
     "1:00 PM",
     "1:15 PM",
     "1:30 PM",
     "2:00 PM",
+    "2:30 PM",
+    "3:00 PM",
+    "3:30 PM",
+    "4:30 PM",
+    "5:20 PM",
+    "6:10 PM",
   ];
   let activePatient = [
+    false,
+    false,
+    false,
+    false,
+    false,
     false,
     false,
     false,
@@ -202,7 +218,7 @@ export default function Today(props) {
     },
   ];
   const hyperLinkDataV = {
-    hyperlinkText: "view more",
+    hyperlinkText: "show more",
     hrefHyperlink: "/patient-list",
     hyperlinkTarget: linkTarget,
     listLinkTarget: "/webpatientchart",
@@ -247,6 +263,7 @@ export default function Today(props) {
                 listLinkData={hyperLinkDataS}
                 customClassList="schedule-list"
                 activePatient={activePatient[i]}
+                patientName={patientName[i]}
               >
                 <PatientCard
                   patientName={patientName[i]}
@@ -264,8 +281,6 @@ export default function Today(props) {
         glanceTitle="Applications"
         customClassSectHeader="glances-section-header"
         customClassIndividualGlance="chats-glance"
-        icon1On={true}
-        icon2On={true}
       >
         <div className="apps-recents">
           <div className="apps-recents-title">Recents</div>
@@ -299,45 +314,6 @@ export default function Today(props) {
           </ul>
         </div>
       </ContainerGlance>
-      {/*<ContainerGlance
-        glanceTitle="Chats"
-        customClassSectHeader="glances-section-header"
-        customClassIndividualGlance="chats-glance"
-        icon1On={true}
-        icon2On={true}
-      >
-        <div>
-          <ul>
-            {[...Array(5)].map((ele, i) => {
-              const {
-                messageCard = "",
-                messageCard1 = "",
-                messageCard3 = "",
-                messageCard4 = "",
-                messageCardIcon1 = false,
-                messageCardIcon2 = false,
-                messageCardIcon3 = false,
-                messagesCount = 0,
-              } = chatsArr[i];
-              return (
-                <Lists key={i}>
-                  <ChatsCard
-                    messageCard={messageCard}
-                    messageCard1={messageCard1}
-                    messageCard3={messageCard3}
-                    messageCard4={messageCard4}
-                    messageCardIcon1={messageCardIcon1}
-                    messageCardIcon2={messageCardIcon2}
-                    messageCardIcon3={messageCardIcon3}
-                    avatarVal={i}
-                    messagesCount={messagesCount}
-                  />
-                </Lists>
-              );
-            })}
-          </ul>
-        </div>
-      </ContainerGlance>*/}
       <ContainerGlance
         glanceTitle="Messages"
         customClassSectHeader="glances-section-header"
@@ -379,9 +355,6 @@ export default function Today(props) {
             })}
           </ul>
         </div>
-        <div className="today-glance-showMore-bottom">
-          <a href="">Show More</a>
-        </div>
       </ContainerGlance>
       <ContainerGlance
         glanceTitle="Patient List"
@@ -391,28 +364,13 @@ export default function Today(props) {
       >
         <div>
           <ul>
-            {[...Array(7)].map((ele, i) => (
+            {[...Array(14)].map((ele, i) => (
               <Lists
                 key={i}
                 listLinkData={hyperLinkDataV}
                 customClassList="patient-list"
                 activePatient={activePatient[i]}
-              >
-                <PatientCard
-                  patientName={patientName[i]}
-                  patientInfo1="F 34y DOB: 3/24/1987"
-                  patientInfo2="MRN: 0987654321"
-                  patientInfo3={"Room 347"}
-                  patientInfo4="Condition"
-                />
-              </Lists>
-            ))}
-            {[...Array(7)].map((ele, i) => (
-              <Lists
-                key={i}
-                listLinkData={hyperLinkDataV}
-                customClassList="patient-list"
-                activePatient={activePatient[i]}
+                patientName={patientName[i]}
               >
                 <PatientCard
                   patientName={patientName[i]}

@@ -12,8 +12,10 @@ import Settings from "../assets/images/settings.png";
 import PatienListViewMore from "../assets/images/patient-list.png";
 import HomeOrganizer from "../assets/images/Home-Organizer.png";
 import PatientListImg from "../assets/images/patient-list.png";
+import PatientListImgWin64 from "../assets/images/PatientList.png";
 import Win64PatientChart from "../assets/images/Win64_PatientChart.png";
 import WebPatientChartImg from "../assets/images/Web_PatientChart.png";
+import MessageCenterWin64 from "../assets/images/MessageCenterWin64.png";
 
 export {
   Applications,
@@ -30,6 +32,8 @@ export {
   PatienListViewMore,
   HomeOrganizer,
   PatientListImg,
+  PatientListImgWin64,
   Win64PatientChart,
   WebPatientChartImg,
+  MessageCenterWin64,
 };

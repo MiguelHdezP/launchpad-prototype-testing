@@ -15,7 +15,7 @@ export default function SectionHeader(props) {
   } = props;
   const {
     customClassHyperlink = "",
-    hyperlinkText = "",
+    hyperlinkText = "Show More",
     hrefHyperlink = "",
     hyperlinkTarget = "",
   } = hyperLinkData;

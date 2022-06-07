@@ -8,8 +8,14 @@ export default function Lists(props) {
     listLinkData = {},
     children,
     activePatient = false,
+    patientName = "",
   } = props;
   const { hyperlinkTarget, hrefHyperlink, listLinkTarget = "" } = listLinkData;
+  let evalValue =
+    patientName === "Suzie Smith" || patientName === "Essie Stanley"
+      ? true
+      : false;
+  console.log(evalValue, evalValue ? patientName : "");
   return (
     <li
       className={`${customClassList} lists ${
@@ -17,13 +23,17 @@ export default function Lists(props) {
       }`}
     >
       {listLinkTarget.length ? (
-        <Hyperlink
-          hyperlinkTarget={hyperlinkTarget}
-          hrefHyperlink={hrefHyperlink}
-          listLinkTarget={listLinkTarget}
-        >
-          {children}
-        </Hyperlink>
+        evalValue ? (
+          <Hyperlink
+            hyperlinkTarget={hyperlinkTarget}
+            hrefHyperlink={hrefHyperlink}
+            listLinkTarget={listLinkTarget}
+          >
+            {children}
+          </Hyperlink>
+        ) : (
+          children
+        )
       ) : (
         children
       )}

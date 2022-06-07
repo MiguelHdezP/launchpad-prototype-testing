@@ -19,13 +19,14 @@ export default function ApplicationsContainer(props) {
     >
       {appsPayload.length ? (
         appsPayload.map((element, index) => {
-          const { appName, appIcon, applicationType } = element;
+          const { appName, appIcon, applicationType, id } = element;
           return (
             <SingleApplication
               appName={appName}
               appIcon={appIcon}
               applicationType={applicationType}
               key={`${index + appName}`}
+              id={id}
             />
           );
         })

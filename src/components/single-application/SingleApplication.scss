@@ -2,6 +2,9 @@
 @import "../../styles/mixins.scss";
 
 .single-application {
+  a {
+    text-decoration: none;
+  }
   cursor: pointer;
   display: flex;
   align-items: center;

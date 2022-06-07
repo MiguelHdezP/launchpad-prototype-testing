@@ -89,6 +89,7 @@
   ul {
     li {
       border-bottom: 1px solid $applicationsGray;
+      font-size: 0.9rem;
       padding: 0.8rem 0 !important;
       padding-left: 0.6rem !important;
       .apps-recent-badge,
@@ -96,9 +97,13 @@
       .apps-recent-badge3,
       .apps-recent-badge4 {
         color: $white;
-        padding: 0.2rem 0.4rem;
         border-radius: 3px;
+        display: inline-block;
+        height: 1.3rem;
+        padding-top: 0.1rem;
         margin-right: 0.4rem;
+        text-align: center;
+        width: 1.3rem;
       }
       .apps-recent-badge {
         background-color: #009af3;
