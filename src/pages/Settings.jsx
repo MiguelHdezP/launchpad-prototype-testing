@@ -14,7 +14,7 @@ export default function Settings(props) {
       <SectionHeader sectionText="Settings" />
       <div className="pagesContainer">
         <h1>
-          Choose one to five modules to display. Apps and Settings are required.
+          Choose one to four modules to display. Apps and Settings are required.
         </h1>
         <h2>Launch Pad Modules</h2>
         <ul>

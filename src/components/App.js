@@ -186,8 +186,8 @@ export default function App() {
       <NotificationBanner
         notificationIcon="http://cdn.onlinewebfonts.com/svg/img_331995.png"
         notificationTitle="Alert"
-        altText="Alert: You can only have 5 tabs"
-        notificationDescp="You can only have 5 tabs"
+        altText="Alert: You can only have 4 tabs"
+        notificationDescp="You can only have 4 tabs"
         notificationTurnOnOff={toggleNotBanner}
       />
       <Container>
