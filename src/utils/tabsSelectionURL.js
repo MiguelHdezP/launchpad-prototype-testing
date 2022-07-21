@@ -1,7 +1,5 @@
 export const returnActiveTabs = (value) => {
   switch (value) {
-    case "today":
-      return 1;
     case "protocols":
       return 3;
     case "announcements":

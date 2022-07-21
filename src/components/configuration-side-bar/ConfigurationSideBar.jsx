@@ -18,6 +18,7 @@ export default function ConfigurationSideBar(props) {
     appsToBeDisplayed,
     chooseLinkTarget,
     activeCount,
+    scrollGlances,
   } = props;
   const [configPerPage, setConfigPerPage] = useState("");
   let populateSideBar = () => {
@@ -64,7 +65,7 @@ export default function ConfigurationSideBar(props) {
     <>
       <div className="navBar">
         <Link to="#" className="menu-bars" title="Configuration options">
-          {/*<BsGearFill onClick={populateSideBar} />*/}
+          <BsGearFill onClick={populateSideBar} />
         </Link>
       </div>
       <nav className={sidebarVisible ? "nav-menu active" : "nav-menu"}>
@@ -81,7 +82,10 @@ export default function ConfigurationSideBar(props) {
             />
           )) ||
             (configPerPage === "/today" && (
-              <ConfigToday chooseLinkTarget={chooseLinkTarget} />
+              <ConfigToday
+                chooseLinkTarget={chooseLinkTarget}
+                scrollGlances={scrollGlances}
+              />
             )) ||
             (configPerPage === "/protocols" && <ConfigCustom />) ||
             (configPerPage === "/announcements" && <ConfigCustom />) ||

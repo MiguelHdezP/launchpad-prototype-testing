@@ -11,7 +11,7 @@ export default function Settings(props) {
   };
   return (
     <ContentContainer>
-      <SectionHeader sectionText="Settings" noExtraLinks={true} />
+      <SectionHeader sectionText="Settings" />
       <div className="pagesContainer">
         <h1>
           Choose one to five modules to display. Apps and Settings are required.
@@ -25,11 +25,12 @@ export default function Settings(props) {
                 id="js-today"
                 name="today"
                 value="1"
-                checked={checkedState}
+                checked={true}
                 onChange={(e) => {
                   setCheckedState(!checkedState);
                   handleCheckBoxes(e);
                 }}
+                disabled
               />
               <label htmlFor="js-today">Today</label>
             </div>

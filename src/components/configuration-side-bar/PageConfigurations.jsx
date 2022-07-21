@@ -3,10 +3,11 @@ import "./PageConfigurations.scss";
 import Divider from "../divider/Divider";
 
 export const ConfigToday = (props) => {
-  const { chooseLinkTarget } = props;
+  const { chooseLinkTarget, scrollGlances } = props;
   const [pickSearch, setPickSearch] = useState(1);
   const [btnDataSend, BtnDataSend] = useState(true);
   const [txtBtn, setTxtBtn] = useState("Apply");
+  const [scrollCheckBox, setScrollCheckBox] = useState(false);
 
   const handleRadioClick = (e) => {
     const value = parseInt(e.target.value);
@@ -26,15 +27,19 @@ export const ConfigToday = (props) => {
     }
   };
 
+  const handleCheckScroll = () => {
+    setScrollCheckBox(!scrollCheckBox);
+  };
   return (
     <div className="config-apps">
       <label htmlFor="js-search-enter">Open window as:</label>
-      <div>
+      {/*<div>
         <input
           type="radio"
           id="js-search-self"
           name="js-search-self"
           value="1"
+          disabled
           checked={pickSearch == 1 ? true : false}
           onChange={handleRadioClick}
         />
@@ -46,6 +51,7 @@ export const ConfigToday = (props) => {
           id="js-search-blank"
           name="js-search-blank"
           value="2"
+          disabled
           checked={pickSearch == 2 ? true : false}
           onChange={handleRadioClick}
         />
@@ -57,10 +63,20 @@ export const ConfigToday = (props) => {
           id="js-search-popup"
           name="js-search-popup"
           value="3"
+          disabled
           checked={pickSearch == 3 ? true : false}
           onChange={handleRadioClick}
         />
         <label htmlFor="js-search-popup">popup</label>
+      </div>*/}
+      <div>
+        <input
+          type="checkbox"
+          id="js-scroll-glance"
+          name="js-scroll-glance"
+          onChange={handleCheckScroll}
+        />
+        <label htmlFor="js-scroll-glance">Glance Scroll</label>
       </div>
       <div className="config-apps-button">
         <button
@@ -74,6 +90,8 @@ export const ConfigToday = (props) => {
                 setTxtBtn("Apply");
               }, 800);
             }, 100);
+            if (scrollCheckBox) scrollGlances(true);
+            else scrollGlances(false);
           }}
         >
           {txtBtn}
@@ -88,7 +106,7 @@ export const ConfigApps = (props) => {
   const [pickSearch, setPickSearch] = useState(2);
   const [pickSort, setPickSort] = useState(3);
   const [pickArrange, setPickArrange] = useState(5);
-  const [appsNumber, setAppsNumber] = useState(0);
+  const [appsNumber, setAppsNumber] = useState(127);
   const [btnDataSend, BtnDataSend] = useState(true);
   const [radiosToggle, setRadiosToggle] = useState(1);
   const [txtBtn, setTxtBtn] = useState("Apply");
@@ -124,7 +142,7 @@ export const ConfigApps = (props) => {
           value="1"
           checked={pickSearch == 1 ? true : false}
           onChange={handleRadioClick}
-          disabled={!!radiosToggle}
+          //disabled={!!radiosToggle}
         />
         <label htmlFor="js-search-filter">Search filter</label>
       </div>
@@ -136,14 +154,14 @@ export const ConfigApps = (props) => {
           value="2"
           checked={pickSearch == 2 ? true : false}
           onChange={handleRadioClick}
-          disabled={!!radiosToggle}
+          // disabled={!!radiosToggle}
         />
         <label htmlFor="js-search-enter">Serch by enter/click button</label>
       </div>
       <Divider customClassDivider="config-divider" />
       <div>
         <label htmlFor="js-displayed-apps">
-          Applications to be displayed (0-30)
+          Applications to be displayed (0-127)
         </label>
         <input
           type="number"
@@ -182,7 +200,7 @@ export const ConfigApps = (props) => {
         <label htmlFor="js-arrange-z">N arrangement</label>
       </div>
       <Divider customClassDivider="config-divider" />
-      <div>
+      {/* <div>
         <input
           type="radio"
           id="js-sort-az"
@@ -205,8 +223,8 @@ export const ConfigApps = (props) => {
           disabled={true}
         />
         <label htmlFor="js-sort-za">Sort Z-A</label>
-      </div>
-      <Divider customClassDivider="config-divider" />
+      </div>      <Divider customClassDivider="config-divider" />*/}
+
       <button className="config-button-count" onClick={handleSendMessage}>
         Send new message ({newMessage})
       </button>
@@ -236,6 +254,8 @@ export const ConfigApps = (props) => {
                 BtnDataSend(true);
                 setTxtBtn("Apply");
               }, 800);
+              setNewMessage(0);
+              setNewPatient(0);
             }, 100);
           }}
         >

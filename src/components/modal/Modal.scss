@@ -1,21 +1,29 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-.modal {
-  margin: 0 auto;
-  position: relative;
-  width: 60%;
-  .modal-contents {
-    align-items: center;
-    background-color: $white;
-    border: 1px solid $applicationsGray;
-    display: flex;
-    height: 5rem;
-    justify-content: center;
-    margin-top: 10rem;
-    opacity: 0.9;
-    position: absolute;
-    width: 100%;
-    z-index: 100000;
+.background-modal {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  .modal {
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    z-index: 1000;
+    .modal-contents {
+      align-items: center;
+      background-color: $white;
+      border: 1px solid $applicationsGray;
+      display: flex;
+      height: 5rem;
+      justify-content: center;
+      margin-top: 10rem;
+      opacity: 1;
+      position: absolute;
+      width: 100%;
+      z-index: 100000;
+    }
   }
 }

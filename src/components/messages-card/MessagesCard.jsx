@@ -15,7 +15,7 @@ export default function MessagesCard(props) {
     messageCardIcon2 = false,
     messageCardIcon3 = false,
     newMessage = false,
-    toggleModalEmailRead,
+    toogleModalAction,
   } = props;
   const [toggleNewMessage, setToggleNewMessage] = useState(newMessage);
 
@@ -24,7 +24,7 @@ export default function MessagesCard(props) {
   }, [newMessage]);
 
   const handleClick = () => {
-    toggleModalEmailRead();
+    toogleModalAction();
     setToggleNewMessage(false);
   };
 

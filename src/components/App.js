@@ -17,6 +17,7 @@ import WebPatientChart from "../pages/popup-pages/WebPatientChart";
 import PatientListImgWin64 from "../pages/popup-pages/PatientListImgWin64";
 import MessageCenterWin64 from "../pages/popup-pages/MessageCenterWin64";
 import MessageCenterWinTouch from "../pages/popup-pages/MessageCenterWinTouch";
+import GlanceSettings from "./glance-settings/GlanceSettings";
 import Today from "../pages/Today";
 import Apps from "../pages/Apps";
 import Protocols from "../pages/Protocols";
@@ -27,7 +28,6 @@ import Settings from "../pages/Settings";
 import Announcements from "../pages/Announcements";
 import Messages from "../pages/Messages";
 import Ddashboard from "../pages/Ddashboard";
-import HomePage from "../pages/HomePage";
 
 export default function App() {
   let pathArray = window.location.pathname.split("/");
@@ -49,9 +49,16 @@ export default function App() {
   const [countsMsg, setCountsMsg] = useState(0);
   const [countsSch, setCountsSch] = useState(0);
   const [toggleModal, setToggleModal] = useState(false);
-
+  const [toggleScrollGlance, setToggleScrollGlance] = useState(false);
+  const [recentApps, setRecentApps] = useState([]);
+  const [pinnedApps, setPinnedApps] = useState([]);
+  const [modalMessage, setModalMessage] = useState("Some action happened");
+  const [modalContent, setModalContent] = useState(false);
+  const [newGlanceM, setNewGlanceM] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   const hideSidebar = () => setSidebar(false);
+  const [checkboxAtt, setCheckboxAtt] = useState(false);
+  const [checkboxApps, setCheckboxApps] = useState(true);
 
   useEffect(() => {
     let urlPathToCheck = pathArray[1];
@@ -63,8 +70,7 @@ export default function App() {
       urlPathToCheck === "webpatientchart" ||
       urlPathToCheck === "messageCenterWin64" ||
       urlPathToCheck === "patientListImgWin64" ||
-      urlPathToCheck === "messageCenterWinTouch" ||
-      urlPathToCheck === ""
+      urlPathToCheck === "messageCenterWinTouch"
     ) {
       setTurnOnOffAppTabs(false);
     }
@@ -103,35 +109,79 @@ export default function App() {
       setVisibleTabs(tabsToDisplay);
     }
   };
-  const chooseLinkTarget = (value) => {
-    setLinkTarget(value);
-  };
-  const toggleModalEmailRead = () => {
-    setToggleModal(true);
-    setTimeout(() => {
-      setToggleModal(false);
-    }, 800);
-    if (countsMsg > 0) {
-      setCountsMsg(countsMsg - 1);
-      setNumberOfCounts(numberOfCounts - 1);
+  const chooseLinkTarget = (value) => setLinkTarget(value);
+
+  const toogleModalAction = (value = "") => {
+    let speedModalToggle = 800;
+    if (value === "myday") {
+      setToggleModal(true);
+      setModalContent(!modalContent);
+    } else {
+      if (value.length) {
+        setModalMessage(value);
+        speedModalToggle = 2000;
+      }
+      setToggleModal(true);
+      setTimeout(() => {
+        setToggleModal(false);
+      }, speedModalToggle);
+      if (countsMsg > 0) {
+        setCountsMsg(countsMsg - 1);
+        setNumberOfCounts(numberOfCounts - 1);
+      }
+      if (countsSch > 0) {
+        setCountsSch(countsSch - 1);
+        setNumberOfCounts(numberOfCounts - 1);
+      }
     }
+  };
+  const toggleModalContent = () => {
+    setToggleModal(false);
+    setModalContent(!modalContent);
   };
   const activeCount = (value1 = 0, value2 = 0) => {
     setNumberOfCounts(value1 + value2);
     setCountsMsg(value1);
     setCountsSch(value2);
   };
+  const scrollGlances = (val) => {
+    if (val) setToggleScrollGlance(true);
+    else setToggleScrollGlance(false);
+  };
+  const recentApplications = (e) => {
+    const eText = e.innerText;
+    if (typeof eText === "string") setRecentApps([eText, ...recentApps]);
+  };
+  const pinnedApplications = (e) => setPinnedApps([e, ...pinnedApps]);
+
+  const addNewGlanceToday = () => setNewGlanceM(!newGlanceM);
+
+  const checkboxNeeded = () => setCheckboxAtt(!checkboxAtt);
+
+  const checkboxApplications = () => setCheckboxApps(!checkboxApps);
 
   return (
     <>
       {toggleModal ? (
-        <Modal>
-          <p>Email Read</p>
-        </Modal>
+        <div className="background-modal">
+          {modalContent ? (
+            <GlanceSettings
+              toggleModalContent={toggleModalContent}
+              addNewGlanceToday={addNewGlanceToday}
+              checkboxNeeded={checkboxNeeded}
+              checkboxApplications={checkboxApplications}
+              checkboxAtt={checkboxAtt}
+              checkboxApps={checkboxApps}
+            />
+          ) : (
+            <Modal customClass="">
+              <p>{modalMessage}</p>
+            </Modal>
+          )}
+        </div>
       ) : (
         ""
       )}
-
       {turnOnOffAppTabs ? <ApplicationHeader /> : ""}
       <NotificationBanner
         notificationIcon="http://cdn.onlinewebfonts.com/svg/img_331995.png"
@@ -151,6 +201,7 @@ export default function App() {
                 appsToBeDisplayed={appsToBeDisplayed}
                 chooseLinkTarget={chooseLinkTarget}
                 activeCount={activeCount}
+                scrollGlances={scrollGlances}
               />
               <Tabs
                 toggleSideBar={hideSidebar}
@@ -164,7 +215,22 @@ export default function App() {
           )}
 
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/"
+              element={
+                <Today
+                  linkTarget={linkTarget}
+                  numberOfCounts={numberOfCounts}
+                  countsMsg={countsMsg}
+                  countsSch={countsSch}
+                  toogleModalAction={toogleModalAction}
+                  toggleScrollGlance={toggleScrollGlance}
+                  recentApps={recentApps}
+                  pinnedApps={pinnedApps}
+                  newGlanceM={newGlanceM}
+                />
+              }
+            />
             <Route
               path="/apps"
               element={
@@ -175,6 +241,9 @@ export default function App() {
                   dataNoData={dataNoData}
                   filterFlag={filterFlag}
                   activeCount={activeCount}
+                  recentApplications={recentApplications}
+                  pinnedApplications={pinnedApplications}
+                  toogleModalAction={toogleModalAction}
                 />
               }
             />
@@ -186,7 +255,11 @@ export default function App() {
                   numberOfCounts={numberOfCounts}
                   countsMsg={countsMsg}
                   countsSch={countsSch}
-                  toggleModalEmailRead={toggleModalEmailRead}
+                  toogleModalAction={toogleModalAction}
+                  toggleScrollGlance={toggleScrollGlance}
+                  recentApps={recentApps}
+                  pinnedApps={pinnedApps}
+                  newGlanceM={newGlanceM}
                 />
               }
             />

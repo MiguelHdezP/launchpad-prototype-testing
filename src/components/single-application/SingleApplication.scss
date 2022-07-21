@@ -22,10 +22,12 @@
     min-width: 2.5rem;
   }
   .single-application-labels {
+    flex: 2;
     label:nth-child(2) {
       color: $titlesTextGray;
       margin-top: 0.2rem;
     }
+    max-width: 5rem;
   }
   label {
     display: block;
@@ -33,5 +35,22 @@
     cursor: pointer;
     font-size: 0.7rem;
     margin-left: 0.7rem;
+  }
+  .single-app-iconApps {
+    height: 2.5rem;
+    min-width: 2.5rem;
+  }
+  .single-app-pinIcon {
+    align-self: baseline;
+    color: $black;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin: 0.3rem;
+    span {
+      padding: 0.2rem;
+      &:hover {
+        color: $focusOutlineIcon;
+      }
+    }
   }
 }

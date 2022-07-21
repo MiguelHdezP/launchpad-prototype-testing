@@ -10,6 +10,9 @@ export default function ApplicationsContainer(props) {
     customClass = "",
     filterFlag,
     appsPayload = [],
+    recentApplications,
+    pinnedApplications,
+    toogleModalAction,
   } = props;
 
   return (
@@ -27,6 +30,9 @@ export default function ApplicationsContainer(props) {
               applicationType={applicationType}
               key={`${index + appName}`}
               id={id}
+              recentApplications={recentApplications}
+              pinnedApplications={pinnedApplications}
+              toogleModalAction={toogleModalAction}
             />
           );
         })

@@ -17,6 +17,12 @@ import Win64PatientChart from "../assets/images/Win64_PatientChart.png";
 import WebPatientChartImg from "../assets/images/Web_PatientChart.png";
 import MessageCenterWin64 from "../assets/images/MessageCenterWin64.png";
 import MessageCenterWinTouch from "../assets/images/MessageCenterWin_touch.png";
+import iconConnectM from "../assets/images/Connect_Messenger.png";
+import iconPCT from "../assets/images/PowerChart-Touch.png";
+import iconPower from "../assets/images/PowerChart.png";
+import personDummy from "../assets/images/person.png";
+import attentionNeeded from "../assets/images/attentionNeeded.png";
+import applicationsGlance from "../assets/images/appsGlance.png";
 
 export {
   Applications,
@@ -38,4 +44,10 @@ export {
   WebPatientChartImg,
   MessageCenterWin64,
   MessageCenterWinTouch,
+  iconConnectM,
+  iconPCT,
+  iconPower,
+  personDummy,
+  attentionNeeded,
+  applicationsGlance,
 };

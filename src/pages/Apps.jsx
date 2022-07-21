@@ -9,8 +9,16 @@ import Divider from "../components/divider/Divider";
 import MockAppsData from "../context/mockData.json";
 
 export default function Apps(props) {
-  const { searchConfig, sortConfig, arrangeConfig, dataNoData, filterFlag } =
-    props;
+  const {
+    searchConfig,
+    sortConfig,
+    arrangeConfig,
+    dataNoData,
+    filterFlag,
+    recentApplications,
+    pinnedApplications,
+    toogleModalAction,
+  } = props;
   const fakeData = MockAppsData.slice(0, dataNoData);
   const [payLoadData, setPayLoadData] = useState("");
   const [searchApps, setSearchApp] = useState("");
@@ -52,7 +60,7 @@ export default function Apps(props) {
 
   return (
     <ContentContainer>
-      <SectionHeader sectionText="Applications" noExtraLinks={true} />
+      <SectionHeader sectionText="Applications" />
       {dataNoData > 15 ? (
         <Form>
           <FieldSet classFieldset="app-filtering">
@@ -68,6 +76,9 @@ export default function Apps(props) {
         classAppContainer={`${arrangeApps} citrix-apps`}
         customClass={dataNoData > 15 ? "" : "citrix-apps-extraPadding"}
         filterFlag={filterFlag}
+        recentApplications={recentApplications}
+        pinnedApplications={pinnedApplications}
+        toogleModalAction={toogleModalAction}
       />
     </ContentContainer>
   );

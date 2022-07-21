@@ -15,7 +15,7 @@ export default function Lists(props) {
     patientName === "Suzie Smith" || patientName === "Essie Stanley"
       ? true
       : false;
-  console.log(evalValue, evalValue ? patientName : "");
+
   return (
     <li
       className={`${customClassList} lists ${
