@@ -12,7 +12,7 @@ export default function ApplicationHeader() {
     <section id="js-application-header" className="application-header">
       <div className="application-header-title">
         <img src={ApplicationsBar} alt="Applications icon" />
-        <span>Launchpad</span>
+        <span>Home</span>
       </div>
       <div className="application-header-options">
         <ul className="application-header-iconsSet1">

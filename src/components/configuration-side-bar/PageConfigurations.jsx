@@ -32,8 +32,9 @@ export const ConfigToday = (props) => {
   };
   return (
     <div className="config-apps">
-      <label htmlFor="js-search-enter">Open window as:</label>
-      {/*<div>
+      {/*
+            <label htmlFor="js-search-enter">Open window as:</label>
+      <div>
         <input
           type="radio"
           id="js-search-self"
