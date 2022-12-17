@@ -1,14 +1,36 @@
-# Custom details about the application
+# App configuration
 
-blah blah blah
+Objective
+Goals
 
-# Getting Started with Create React App
+Approach, what is the scenario builder.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Diagram of process how it works and people involved, UX, Dev HR and user.
 
-## Available Scripts
 
-In the project directory, you can run:
+There are three applications:
+
+1.- Scenarios Builder: this application is to combine different approaches in order to help on the conversation, pre-test and create the final combination for the scenarios to be tested.
+
+2.- The dialog with combobox, this is the prototype itself to be tested; the combobox will be configured according the querystring.
+
+3.- The prototype launcher: following the same approach I did with other testings, this is the scenarios dashboard for the users.
+
+
+## Scenarios Builder
+
+### `Adding more data` adding more data
+
+The mock data is in a json file PrintersComboBox/dbprintersDialog/data.json.
+
+The data is consumed through an asyn function called getData that exist in PrintersComboBox/dbprintersDialog/combobox.js, line 3
+
+Note: I'm using a third party script for the combobox, but I added some custome code to the script.
+
+This is the original source of the combobox https://www.zoonman.com/projects/combobox/
+
+The HTMl where the data of the combobox is added is PrintersComboBox/dbprintersDialog/dbprinters.html
+
 
 ### `npm start`
 
