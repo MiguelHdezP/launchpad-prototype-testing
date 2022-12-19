@@ -41,7 +41,7 @@ Note: I'm using a third party script for the combobox, but I added some custom c
 
 This is the original source of the combobox https://www.zoonman.com/projects/combobox/
 
-The HTMl where the data of the combobox is added is PrintersComboBox/dbprintersDialog/dbprinters.html
+The HTML where the data of the combobox is added is PrintersComboBox/dbprintersDialog/dbprinters.html
 
 The labels below the input text are configured in the file PrintersComboBox/dbprintersDialog/combobox.js
 
