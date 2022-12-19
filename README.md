@@ -28,7 +28,7 @@ The styling can be adapted according to the needs.
 
 You can add N scenarios, just copy and paste the following code inside the `<div id="js-content" class="content">` tag:
 
-`
+```
 <section id="js-scenario" class="scenarioSection">
            <button
              id="js-buttonScenario1"
@@ -38,7 +38,7 @@ You can add N scenarios, just copy and paste the following code inside the `<div
              *<Scenario name>*
            </button>
          </section>
-`
+```
 
 Later, add the querystring with all the scenario data, to the `openPrototype` function as a parameter.
 
