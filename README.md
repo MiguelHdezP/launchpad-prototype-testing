@@ -1,13 +1,5 @@
 # App configuration
 
-Objective
-Goals
-
-Approach, what is the scenario builder.
-
-Diagram of process how it works and people involved, UX, Dev HR and user.
-
-
 There are three applications:
 
 1.- Scenarios Builder: This application was created to combine different variations in order to help in the conversations to select the scenarios to be tested.
