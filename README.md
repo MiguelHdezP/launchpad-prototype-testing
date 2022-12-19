@@ -35,7 +35,7 @@ There are two objects, *rawData* object is for the scenario when there is a new 
 
 The mock data is in a json file PrintersComboBox/dbprintersDialog/data.json.
 
-The data is consumed through an async function called getData that exist in PrintersComboBox/dbprintersDialog/combobox.js, line 3
+The data is consumed through an async function called getData that exists in PrintersComboBox/dbprintersDialog/combobox.js, line 3
 
 Note: I'm using a third party script for the combobox, but I added some custom code to the script.
 
@@ -53,7 +53,16 @@ I customized the code a bit in this file  PrintersComboBox/dbprintersDialog/dbpr
 
 The function of the Contextual menu is called in line 88, in this file PrintersComboBox/dbprintersDialog/combobox.js
 
+### Open Destination Dialog 
+This is the folder where the HTML and screenshot of the panel lives PrintersComboBox/dbprintersDialog/outputDestionationDialog
 
+### How to add more functionality to create scenarios?
+1.- Create the HTML layout in PrintersComboBox/index.html
+2.- All the scripts for the config panel and the creation of the scenarios are here PrintersComboBox/scripts.js
+3.- Adjust the parsing script of the query string to generate the combo box with the configured functionalities PrintersComboBox/dbprintersDialog/combobox.js
+
+One a scenario is created in the *Scenarios builder application*, a querystring will be created with all the info about how the **combobox** should work.
+The query string is parsing and configuration is in PrintersComboBox/dbprintersDialog/combobox.js.
 
 
 
