@@ -40,7 +40,7 @@ You can add N scenarios, just copy and paste the following code inside the `<div
 </section>
 ```
 
-Later, add the querystring with all the scenario data, to the `openPrototype` function as a parameter.
+Later, add the querystring with all the scenario data to the `openPrototype` function as a parameter.
 
 
 ## Scenarios Builder
