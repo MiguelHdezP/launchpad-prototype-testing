@@ -24,12 +24,23 @@ There are three applications:
 
 PrintersComboBox/scenarios-launcher.html
 
-The styling is can be adapted according to the needs.
+The styling can be adapted according to the needs.
 
-You can add N scenarios, add custom names to the scenarios; and to open the Dialog with combobox with the respective configuration only add the querystring to as a paramenter of the function `openPrototype`.
+You can add N scenarios, just copy and paste the following code inside the `<div id="js-content" class="content">` tag:
 
+`
+<section id="js-scenario" class="scenarioSection">
+           <button
+             id="js-buttonScenario1"
+             class="buttonScenario"
+             onclick="openPrototype(*<querystring>*)"
+           >
+             *<Scenario name>*
+           </button>
+         </section>
+`
 
-
+Later, add the querystring with all the scenario data, to the `openPrototype` function as a parameter.
 
 
 ## Scenarios Builder
