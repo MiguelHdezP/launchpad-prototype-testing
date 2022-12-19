@@ -86,7 +86,7 @@ The function of the Contextual menu is called in line 88, in this file PrintersC
 ### Open Destination Dialog 
 This is the folder where the HTML and screenshot of the panel lives PrintersComboBox/dbprintersDialog/outputDestionationDialog
 
-### How to add more functionality to create scenarios?
+### How to add more functionalities to create scenarios?
 1.- Create the HTML layout in PrintersComboBox/index.html
 2.- All the scripts for the config panel and the creation of the scenarios are here PrintersComboBox/scripts.js
 3.- Adjust the parsing script of the query string to generate the combo box with the configured functionalities PrintersComboBox/dbprintersDialog/combobox.js
