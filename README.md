@@ -43,6 +43,16 @@ This is the original source of the combobox https://www.zoonman.com/projects/com
 
 The HTMl where the data of the combobox is added is PrintersComboBox/dbprintersDialog/dbprinters.html
 
+The labels below the input text are configured in the file PrintersComboBox/dbprintersDialog/combobox.js
+
+The adjustments I added are within blocks of code with comments that say "Custome code".
+
+For example for the label "Enter 3 characters to search all...", the text is configured in line 264, inside the `this.edit.onkeyup` function.
+
+![Screenshot 2022-12-19 at 14 18 18](https://user-images.githubusercontent.com/79478801/208513934-016e1d42-7057-4f23-9b72-8879cd517f62.png)
+
+
+
 ### Contextual menu
 I'm using a third party script for the contextual menu
 
