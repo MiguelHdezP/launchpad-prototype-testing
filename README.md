@@ -20,7 +20,16 @@ There are three applications:
 ![Screenshot 2022-12-19 at 13 54 34](https://user-images.githubusercontent.com/79478801/208508944-aff3e598-238f-442f-8c45-1e81c58b4f16.png)
 
 
-3.- The prototype launcher: following the same approach I did with other testings, this is the scenarios dashboard for the users.
+3.- The prototype launcher: following the same approach I did with other tests, this is the scenario panel for users.
+
+PrintersComboBox/scenarios-launcher.html
+
+The styling is can be adapted according to the needs.
+
+You can add N scenarios, add custom names to the scenarios; and to open the Dialog with combobox with the respective configuration only add the querystring to as a paramenter of the function `openPrototype`.
+
+
+
 
 
 ## Scenarios Builder
