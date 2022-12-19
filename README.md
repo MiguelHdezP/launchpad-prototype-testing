@@ -11,7 +11,7 @@ Diagram of process how it works and people involved, UX, Dev HR and user.
 There are three applications:
 
 1.- Scenarios Builder: This application was created to combine different variations in order to help in the conversations to select the scenarios to be tested.
-![Alt text](https://raw.github.cerner.com/MP084652/dbprinters/master/scenario_builder.png?token=GHSAT0AAAAAAAAELESMO7FXLO3COXIIEEWIY5AZZAQ)
+![plot](https://raw.github.cerner.com/MP084652/dbprinters/master/scenario_builder.png?token=GHSAT0AAAAAAAAELESMO7FXLO3COXIIEEWIY5AZZAQ)
 
 2.- The Dialog with combobox, is the prototype itself to be tested; the combobox will be configured according the querystring.
 
