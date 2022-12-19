@@ -17,83 +17,54 @@ There are three applications:
 
 2.- The Dialog with combobox, is the prototype itself to be tested; the combobox will be configured according the querystring.
 
+![Screenshot 2022-12-19 at 13 54 34](https://user-images.githubusercontent.com/79478801/208508944-aff3e598-238f-442f-8c45-1e81c58b4f16.png)
+
+
 3.- The prototype launcher: following the same approach I did with other testings, this is the scenarios dashboard for the users.
 
 
 ## Scenarios Builder
 
-### `Adding more data` adding more data
+### Mocked Data Json format
+PrintersComboBox/dbprintersDialog/data.json
+
+There are two objects, *rawData* object is for the scenario when there is a new user with no data pre-loaded. And *preConfiguredData* object is for the scenario when there are suggested and default items.
+
+
+### Adding more data
 
 The mock data is in a json file PrintersComboBox/dbprintersDialog/data.json.
 
-The data is consumed through an asyn function called getData that exist in PrintersComboBox/dbprintersDialog/combobox.js, line 3
+The data is consumed through an async function called getData that exist in PrintersComboBox/dbprintersDialog/combobox.js, line 3
 
-Note: I'm using a third party script for the combobox, but I added some custome code to the script.
+Note: I'm using a third party script for the combobox, but I added some custom code to the script.
 
 This is the original source of the combobox https://www.zoonman.com/projects/combobox/
 
 The HTMl where the data of the combobox is added is PrintersComboBox/dbprintersDialog/dbprinters.html
 
+### Contextual menu
+I'm using a third party script for the contextual menu
 
-### `npm start`
+This is the original code:
+https://www.linkedin.com/pulse/right-click-context-menu-javascript-piyali-das/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I customized the code a bit in this file  PrintersComboBox/dbprintersDialog/dbprintersScript.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The function of the Contextual menu is called in line 88, in this file PrintersComboBox/dbprintersDialog/combobox.js
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
