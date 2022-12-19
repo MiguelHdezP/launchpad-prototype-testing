@@ -30,14 +30,14 @@ You can add N scenarios, just copy and paste the following code inside the `<div
 
 ```
 <section id="js-scenario" class="scenarioSection">
-           <button
-             id="js-buttonScenario1"
-             class="buttonScenario"
-             onclick="openPrototype(*<querystring>*)"
-           >
-             *<Scenario name>*
-           </button>
-         </section>
+   <button
+      id="js-buttonScenario1"
+      class="buttonScenario"
+      onclick="openPrototype(<querystring>)"
+   >
+        <Scenario name>
+   </button>
+</section>
 ```
 
 Later, add the querystring with all the scenario data, to the `openPrototype` function as a parameter.
